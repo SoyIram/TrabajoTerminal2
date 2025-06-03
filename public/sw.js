@@ -3,8 +3,11 @@
 const CACHE_NAME = 'v1_grupo_lehren',
 urlsToCache = [
   './',
-  './img/ProgramadorFitness.png',
-  './img/favicon.png',
+  './index.html',
+  './styles.css',
+  './script.js',
+  './img/icon-192x192.png',
+  './img/icon-512x512.png'
 ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
