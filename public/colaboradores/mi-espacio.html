@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Integrador</title>
+    <!--PWA-->
+    <link rel="manifest" href="./manifest.json"> 
+<!-- partial:index.partial.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STATED.</title>
+
+
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+   
+  
+</head>
+
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+   <div id="preloader"></div>
+  
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+              <!-- <a id="logo" href="#"><img class="logo" src="https://82482b.a2cdn1.secureserver.net/wp-content/uploads/2021/07/logo-Lehren-416x138-1.png">&nbsp;
+              </a> -->
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="../index.html" class="active">Inicio</a></li>
+                        <li><a href="../alumnos/mi-espacio.html">Alumnos</a></li>
+                        <li><a href="../avisos/mantente-informado.html">Avisos</a></li>
+                        <li><a href="../contacto/redes-sociales.html">Contacto</a></li>
+                            <li id="close-flyout"><span class="fas fa-times"></span></li>
+                            <li style="display: none;" class="logged-out menu-item">
+                                <a class=" registration" href="#" data-toggle="modal" data-target="#signinModal"><!--i class="fas fa-user"></i-->&nbsp;Accede</a>
+                            </li>
+                            <!--li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fas fa-clipboard"></i>&nbsp;Registrate</a></li-->
+                                <!--li style="display: none;" class="menu-item logged-in"><a class="registration" href="./clinica/promociones/avisos.html"><i class="fas fa-bell"></i>&nbsp;Promociones</a></li-->&nbsp;
+                                <li style="display: none;" class="boton-salir logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        
+        <section id="hero">
+            <div class="fade"></div>
+            <div class="hero-text">
+                <h1>Colaboradores</h1>
+                <p>Impulsamos con tecnología la educación a distancia</p>
+                <div id="contenido">
+  
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="viewport">
+      <!--div class="title">
+       <h1> Modern Cards Design.     </h1> 
+      </div-->
+    <div class="cards">
+     
+      <div class="card">
+        <a href="https://www.instructure.com/canvas/login">     <!--  https://moodle.org/?lang=es  -->
+        <div class="card_img card1">
+             <div class="plus"><p>+</p></div>
+        </div>
+        <h3>Canvas</h3>
+        <div class="line">
+        </div>
+        <p>Tecnología educativa con la misión de elevar el éxito de los estudiantes, amplificar el poder de la
+          enseñanza e inspirar a todos a aprender juntos.</p>
+      </a>
+      </div>
+
+
+      <div class="card">
+        <a href="https://moodle.org/?lang=es">
+        <div class="card_img card2">
+          <div class="plus"><p>+</p></div>
+        </div>
+        <h3>Moodle</h3>
+        <div class="line">
+        </div>
+       <p>El sitio para obtener apoyo, hacer preguntas y contribuir a la plataforma de aprendizaje
+        de código abierto.</p>
+      </a>
+      </div>
+
+
+      <div class="card">
+        <a href="https://edublocks.org/">     <!--  https://moodle.org/?lang=es  -->
+        <div class="card_img card3">
+          <div class="plus"><p>+</p></div>
+        </div>
+        <h3>Edublocks</h3>
+        <div class="line">
+        </div>
+        <p>Es una herramienta en línea que ayuda a los estudiantes a aprender a programar de manera fácil y accesible.
+          Utiliza bloques de código en lugar de escribir código de texto.</p>
+      </a>
+      </div>
+
+
+      <div class="card">
+        <a href="https://www.figma.com/">        <!--  https://moodle.org/?lang=es   -->
+        <div class="card_img card4">
+          <div class="plus"><p>+</p></div>
+        </div>
+        <h3>Figma</h3>
+        <div class="line">
+        </div>
+        <p>Es una herramienta de prototipado web y editor de gráficos vectorial. A diferencia de otras herramientas, Figma 
+          se aloja en la web, lo que permite compartir el proyecto con el equipo.</p>
+        </a>
+        </div>
+
+
+      <div class="card">
+        <a href="https://www.coursera.org/">        <!--   https://moodle.org/?lang=es   -->
+        <div class="card_img card5">
+          <div class="plus"><p>+</p></div>
+        </div>
+        <h3>Coursera</h3>
+        <div class="line">
+        </div>
+       <p>Es una plataforma de educación en línea que ofrece acceso a cursos masivos y abiertos de diversas
+        universidades y organizaciones, permitiendo a los estudiantes inscribirse en cursos.</p>
+      </a>
+      </div>
+
+      
+      <div class="card">
+        <a href="https://moodle.org/?lang=es">
+        <div class="card_img card6">
+          <div class="plus"><p>+</p></div>
+        </div>
+        <h3>TITLE HERE</h3>
+        <div class="line">
+        </div>
+        <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.  </p>
+      </div>
+    </a>
+   </div>
+
+
+   
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+      <!--BOOTSTRAP SCRIPTS-->
+
+<!-- REGISTRO FIREBASE -->
+  <!--MAIN CONTENT-->
+  <div class="container p-5" style="z-index:1">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul class="list-group posts">
+                
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!--BOOTSTRAP SCRIPTS-->
+  
+      <!-- Modal  SignUP-->
+      <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Registro:
+              Contraseña con al menos 6 caracteres
+            </h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+           </div>
+           <div class="modal-body">
+            <form id="signup-form">
+              <div class="form-group">
+                 <input type="text" id="signup-email" class="form-control"
+                 placeholder="E-mail" required>
+              </div>
+              <div class="form-group">
+                 <input type="password" id="signup-password" class="form-control"
+                 placeholder="Contraseña" required>
+              </div>
+              <button type="submit" class="btn btn-primary">SignUp</button>
+            </form>
+           </div>
+         </div>
+        </div>
+      </div>
+                 
+                 
+                 
+                  <!-- Modal  SignIn-->
+                  <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Ingresa con tu correo de Gmail a nuestra plataforma y mantente informado sobre
+                          promociones y avisos importantes
+                        </h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                       </div>
+                       <div class="modal-body">
+                          
+                        <form id="login-form">
+                           
+                          <!--div class="form-group">
+                             <input type="text" id="login-email" class="form-control"
+                             placeholder="E-mail" required>
+                          </div>
+                          <div class="form-group">
+                             <input type="password" id="login-password" class="form-control"
+                             placeholder="Contraseña" required>
+                          </div>
+                          
+                          <button type="submit" class="btn btn-info btn-block">Ingresa</button-->
+                          
+                          <button type="button" class="btn btn-success btn-block black-background white" id="googleLogin"><i class="fab fa-google" aria-hidden="true"></i>&nbsp;Ingresa o Regístrate con Gmail</button>
+                          <!--button type="submit" class="btn btn-primary btn-block" id="facebookLogin"><i class="fab fa-facebook"></i>&nbsp;Ingresa o Regístrate con Facebook</button-->
+                        </form>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
+
+                  
+
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>SUAL</h5>
+                <p>Sistema unificado de acceso en línea con gestor de contraseña integrado para facilitar el inicio de sesión y mejorar la seguridad en múltiples plataformas educativas.</p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h5>Enlaces</h5>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../alumnos/mi-espacio.html">Alumnos</a></li>
+                    <li><a href="../avisos/mantente-informado.html">Avisos</a></li>
+                    <li><a href="../contacto/redes-sociales.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <small>&copy; 2025 <a href="../index.html">SUAL</a> Made in México</small>
+    </footer>
+
+
+
+
+
+          
+                <!--FIREBASE SCRIPTS-->
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+            
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+              
+                <script>
+                   // Your web app's Firebase configuration
+                   var firebaseConfig = {
+    apiKey: "AIzaSyBlYwH5xgfXm71YP0cvVu-kqZ2r-Mfs2O0",
+    authDomain: "tt-2-2996d.firebaseapp.com",
+    projectId: "tt-2-2996d",
+    storageBucket: "tt-2-2996d.firebasestorage.app",
+    messagingSenderId: "148332767233",
+    appId: "1:148332767233:web:0dfd3703e27da2ff88f800"
+  };
+            
+                   // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      // FireStore base de datos
+      const fs = firebase.firestore();
+      firebase.analytics();
+                </script>
+                <!--TERMINA FIREBASE-->
+
+
+
+    <!--Registro-->
+    <script src="./registro.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/utils.js"></script>
+
+      <!-- PWA -->
+      <script src="./script.js"></script>
+
+    <!--script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js'></script-->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+
+<!-- partial -->
+  
+</body>
+</html>
+

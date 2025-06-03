@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SUAL</title>
+  <!--PWA-->
+  <link rel="manifest" href="./manifest.json"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Iram Helios Juan">
+
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+
+<!-- Meta and Opengraph tags -->
+  <meta name="description" content="Material Design Mediahawkz.com Fixed & Responsive Header with Sidebar, mediahawkz.com v2.1">
+  <meta name="keywords" content="material design, fixed header, responsive header, sidebar">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300'>
+
+<!--Carousell-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+<link rel="stylesheet" href="../css/style.css">
+<script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+  <div id="preloader"></div>
+<!-- partial:index.partial.html -->
+
+
+
+
+<!-- nav -->
+<nav class="sidebar">
+  <div class="nav-header">
+    <div class="logo-wrap">
+      <!-- <a class="logo-icon" href="#"><img alt="logo-icon" src="./img/docqui.png" width="40"></a> -->
+      <div id="contenido">
+      <a class="logo-text" href="#">SUAL</a>
+    </div>
+    </div>
+
+    <!--<div class="nav-search">
+      <div class="search">
+        <i class="material-icons">search</i>
+        <input type="search" name="search" placeholder="Buscar" id="sidebarFinder">
+      </div>
+    </div>-->
+  </div>
+  <ul class="nav-categories ul-base">
+    <li><a href="../alumnos/inicioipn.html"><i class="fas fa-home"></i>&nbsp;Inicio</a></li>
+    <!-- <li style="display: none;" class="menu-item logged-in"><a href="./conocenos/acerca-de.html"><i class="fa-regular fa-circle-info"></i>&nbsp;Acerca de</a></li>-->
+    <li><a href="../contacto/contactoipn.html"><i class="fa fa-address-card"></i>&nbsp;Contacto</a></li>
+    <!-- <li style="display: none;" class="menu-item logged-in"><a href="./convocatoria.html">Convocatoria</a></li> -->
+    <li><a href="../alumnos/ipn.html"><i class="fas fa-graduation-cap"></i>&nbsp;Alumnos</a></li>
+    <!-- <li style="display: none;" class="menu-item logged-in"><a href="./docentes/mi-espacio.html"><i class="fa-regular fa-person-chalkboard"></i>&nbsp;Docentes</a></li> -->
+    <!-- <li style="display: none;" class="menu-item logged-in"><a href="./egresado/mi-espacio.html">Egresados</a></li> -->
+    <li><a href="../avisos/avisosipn.html">Anuncios</a></li>
+
+
+ 
+  </ul>
+  <br>
+  <!-- <ul class="social ul-base">
+    <li><a href="https://www.instagram.com/" class="twitter" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://www.facebook.com/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://twitter.com/" class="google-plus" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://www.rssboard.org/rss-specification" class="rss" target="_blank"><i class="fa fa-rss"></i></a></li>
+  </ul> -->
+  <div class="copyright">
+    <span>&copy; 2025 <a href="./index.html" class="link">SUAL</a> Made in México</span>
+    <span>Designed by <a href="./index.html" target="_blank">SUAL</a></span>
+  </div>
+</nav><!-- @end nav -->
+
+<!-- header -->
+<header>
+  <div class="header-inner clearfix">
+    
+    <!--div class="registro">
+
+
+            <li style="display: none;" class="logged-out menu-item">
+                <a class="registration" href="#" data-toggle="modal" data-target="#signinModal"><i class="fas fa-user"></i>&nbsp;Accede</a>
+            </li>
+            <li style="display: none;" class="menu-item logged-in"><a class="registration" href="./clinica/promociones/avisos.html"><i class="fas fa-bell"></i>&nbsp;Promociones</a></li>&nbsp;
+            <li style="display: none;" class="boton-salir logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+        </div-->
+
+    <div class="nav-btn nav-slider">
+      <i class="material-icons">menu</i>
+    </div>
+    <!-- <div class="header-logo">
+      <a href="#"><img alt="logo" src="./img/docqui.png"></a>
+    </div> -->
+    <!--div class="header-categories">
+      <ul class="ul-base">
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#"><span>Categories</span> <i class="material-icons">keyboard_arrow_down</i></a>
+          <ul class="dropdown-menu ul-base">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Speak up</a></li>
+            <li><a href="#">General</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Sports</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div-->
+    <div class="header-search">
+      <!-- <div class="search">
+        <i class="material-icons">search</i>
+        <input type="search" name="search" placeholder="Buscar" id="headerFinder">
+      </div> -->
+        <div>
+            <ul id="listOptions"></ul>
+        </div>
+    </div>
+    <div class="header-menu">
+      <ul class="ul-base">
+        <!--li><a href="#" class="twitter" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" class="google-plus" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" class="rss" target="_blank"><i class="fa fa-rss"></i></a></li>
+        <li><a href="#">Login</a></li-->
+      
+          <li style="display: none;" class="logged-out menu-item">
+              <a class="registration" href="#" data-toggle="modal" data-target="#signinModal"><i class="fas fa-user"></i>&nbsp;Ingresa | Regístrate</a>
+          </li>
+          <!--li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fas fa-clipboard"></i>&nbsp;Registrate</a></li-->
+              <li style="display: none;" class="menu-item logged-in"><a class="registration" href="./avisos/mantente-informado.html"><i class="fas fa-bell"></i>&nbsp;Anuncios</a></li>&nbsp;
+              <li style="display: none;" class="boton-salir logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+
+        
+      </ul>
+      
+    </div>
+  </div>
+</header><!-- @end header -->
+
+<!-- Main content -->
+<main role="main"></main><!-- @end main -->
+
+<!-- Footer -->
+<footer></footer><!-- @end footer -->
+
+
+<div class="overlay"></div>
+
+
+
+
+
+
+<!-- Carousell-->
+<!-- partial:index.partial.html -->
+<div id="wrapper">
+  <section class="slideshow" id="js-header">
+    
+    <div class="slideshow__slide js-slider-home-slide is-current" data-slide="1">
+		<div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+			<div class="slideshow__slide-background-load-wrap background-absolute">
+				<div class="slideshow__slide-background-load background-absolute">
+					<div class="slideshow__slide-background-wrap background-absolute">
+						<div class="slideshow__slide-background background-absolute">
+							<div class="slideshow__slide-image-wrap background-absolute">
+								<div class="slideshow__slide-image background-absolute" style="background-image: url('https://www.topuniversities.com/sites/default/files/profiles-slideshow/20210713-1666023158.DIR%20GRAL%20IPN-3');"></div> <!-- https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80  -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slideshow__slide-caption">
+			<div class="slideshow__slide-caption-text">
+				<div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+					<h1 class="slideshow__slide-caption-title">IPN</h1>
+					<a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+						<span class="slideshow__slide-caption-subtitle-label">Ver Ahora</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  <div class="slideshow__slide js-slider-home-slide is-current" data-slide="2">
+		<div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+			<div class="slideshow__slide-background-load-wrap background-absolute">
+				<div class="slideshow__slide-background-load background-absolute">
+					<div class="slideshow__slide-background-wrap background-absolute">
+						<div class="slideshow__slide-background background-absolute">
+							<div class="slideshow__slide-image-wrap background-absolute">
+								<div class="slideshow__slide-image background-absolute" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/UAM_Recotria_general.JPG/640px-UAM_Recotria_general.JPG');"></div> <!--       https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80         -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slideshow__slide-caption">
+			<div class="slideshow__slide-caption-text">
+				<div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+					<h1 class="slideshow__slide-caption-title">UAM</h1>
+					<a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+						<span class="slideshow__slide-caption-subtitle-label">Ver más</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <div class="slideshow__slide js-slider-home-slide is-next" data-slide="3">
+		<div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+			<div class="slideshow__slide-background-load-wrap background-absolute">
+				<div class="slideshow__slide-background-load background-absolute">
+					<div class="slideshow__slide-background-wrap background-absolute">
+						<div class="slideshow__slide-background background-absolute">
+							<div class="slideshow__slide-image-wrap background-absolute">
+								<div class="slideshow__slide-image background-absolute" style="background-image: url('https://greentology.life/wp-content/uploads/2021/12/22122021_Ibero_CDMX-min.jpg');"></div> <!--    https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80    -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slideshow__slide-caption">
+			<div class="slideshow__slide-caption-text">
+				<div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+					<h1 class="slideshow__slide-caption-title">Universidad Iberoamericana</h1>
+					<a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+						<span class="slideshow__slide-caption-subtitle-label">Ver más</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <div class="slideshow__slide js-slider-home-slide is-prev" data-slide="4">
+		<div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+			<div class="slideshow__slide-background-load-wrap background-absolute">
+				<div class="slideshow__slide-background-load background-absolute">
+					<div class="slideshow__slide-background-wrap background-absolute">
+						<div class="slideshow__slide-background background-absolute">
+							<div class="slideshow__slide-image-wrap background-absolute">
+								<div class="slideshow__slide-image background-absolute" style="background-image: url('https://live.staticflickr.com/4564/24154136747_206d9661a0_b.jpg');"></div> <!--          https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80        -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slideshow__slide-caption">
+			<div class="slideshow__slide-caption-text">
+				<div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+					<h1 class="slideshow__slide-caption-title">UNAM</h1>
+					<a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+						<span class="slideshow__slide-caption-subtitle-label">Ver más</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <div class="c-header-home_footer">
+		<div class="o-container">
+			<div class="c-header-home_controls -nomobile o-button-group">
+				<div class="js-parallax is-inview" data-speed="1" data-position="top" data-target="#js-header">
+					<button class="o-button -white -square -left js-slider-home-button js-slider-home-prev" type="button">
+						<span class="o-button_label">
+							<svg class="o-button_icon" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-prev"></use></svg>
+						</span>
+					</button>
+					<button class="o-button -white -square js-slider-home-button js-slider-home-next" type="button">
+						<span class="o-button_label">
+							<svg class="o-button_icon" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-next"></use></svg>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+   
+    
+  </section>
+<div>
+<!--Termina Carousell-->
+
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 18 18" id="arrow-next">
+        <path id="arrow-next-arrow.svg" d="M12.6,9L4,17.3L4.7,18l8.5-8.3l0,0L14,9l0,0l-0.7-0.7l0,0L4.7,0L4,0.7L12.6,9z"/>
+    </symbol>
+    <symbol viewBox="0 0 18 18" id="arrow-prev">
+        <path id="arrow-prev-arrow.svg" d="M14,0.7L13.3,0L4.7,8.3l0,0L4,9l0,0l0.7,0.7l0,0l8.5,8.3l0.7-0.7L5.4,9L14,0.7z"/>
+    </symbol>
+</svg>
+
+
+
+
+
+   <!-- Home cards 1 -->
+   <div class="container_01">
+   <section class="home-cards">
+    <div>
+      <!-- Imagen local para IPN -->
+      <img src="./img/ipn.png" alt="IPN">
+      <h3>Instituto Politecnico Nacional</h3>
+      <p>
+        El IPN es una institución pública de educación superior e investigación
+        en México que ofrece carreras, posgrados, academias y actividades culturales
+        y deportivas.
+      </p>
+      <div class="botones">
+        <button class="custom-btn btn-3"><span>Ver más</span></button>
+      </div>
+    </div>
+    <div>
+      <!-- https://i.ibb.co/KjGFHVJ/card2.png -->
+      <img src="https://almomento.mx/wp-content/uploads/2022/02/UAM-regresa-a-clases-presenciales-e1644342259925.jpg" alt="" />
+      <h3>Universidad Autónoma Metropolitana</h3>
+      <p>
+        La UAM es una institución pública que ofrece en sus cinco unidades académicas 
+        un módelo educativo flexible e innovador, investigación científica y humanista de
+        alto nivel e impacto social.
+      </p>
+      <div class="botones">
+        <button class="custom-btn btn-3"><span>Ver más</span></button>
+      </div>
+    </div>
+    <div>
+      <!--  https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80  -->
+      <img src="https://img.gothru.org/19002/6228073251525147755/overlay/assets/20200910154441.zdQiRX.jpg?save=optimize" alt="" />
+      <h3>Universidad Iberoamericana</h3>
+      <p>
+        La universidad Iberoamericana es una de las mejores universidades privadas en
+        México y el mundo, ofrece prepa, licenciaturas, posgrados, cursos.
+      </p>
+      <div class="botones">
+        <button class="custom-btn btn-3"><span>Ver más</span></button>
+      </div>
+    </div>
+    <div>
+      <!--   https://i.ibb.co/G57P0Pb/card4.png   -->
+      <img src="https://cdn2.excelsior.com.mx/media/styles/image800x600/public/pictures/2022/09/22/2827457.jpg" alt="" />
+      <h3>Universidad Nacional Autónoma de México</h3>
+      <p>
+        Con centros de estudio en varios estados del país, pero mayormente en la
+        Ciudad de México, la UNAM es la Universidad pública más grande en el
+        país.
+      </p>
+      <div class="botones">
+        <button class="custom-btn btn-3"><span>Ver más</span></button>
+      </div>
+    </div>
+  </section>
+   </div>
+
+<div class="container_01">
+   <section class="xbox">
+    <div class="content">
+      <h2>Problematica</h2>
+      <p>En el ámbito educativo, la gestión de múltiples contraseñas para plataformas genera frustración, debilita la seguridad y afecta la productividad.
+        Los usuarios tienden a usar contraseñas débiles o repetidas por comodidad, aumentando los riesgos.
+        </p>
+        <div class="botones">
+          <button class="custom-btn btn-3"><span>Ver más</span></button>
+        </div>
+    </div>
+  </section>
+</div>
+
+
+
+
+    <!-- /*======== TEXTO E IMAGEN ===========*/ -->
+    <div class="container-intro section">
+      <div class="row">
+          <div class="col-md-6">
+              <h3>
+                  Objetivo
+              </h3>
+              <p>
+                Desarrollar un sistema unificado de acceso en línea con 
+                gestor de contraseñas integrado para facilitar el inicio 
+                de sesión y mejorar la seguridad en múltiples plataformas 
+                educativas.
+              </p>
+              <div class="botones">
+                <button class="custom-btn btn-3"><span>Ver más</span></button>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt=""/>
+          </div>
+      </div>  
+      </div>
+  </div>
+
+      <!--BOOTSTRAP SCRIPTS-->
+
+  
+  <!--BOOTSTRAP SCRIPTS-->
+  
+      <!-- Modal  SignUP-->
+      <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Registro:
+              Contraseña con al menos 6 caracteres
+            </h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+           </div>
+           <div class="modal-body">
+            <form id="signup-form">
+              <div class="form-group">
+                 <input type="text" id="signup-email" class="form-control"
+                 placeholder="E-mail" required>
+              </div>
+              <div class="form-group">
+                 <input type="password" id="signup-password" class="form-control"
+                 placeholder="Contraseña" required>
+              </div>
+              <button type="submit" class="btn btn-primary">SignUp</button>
+            </form>
+           </div>
+         </div>
+        </div>
+      </div>
+                 
+                 
+                 
+<!-- Modal SignIn-->
+<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">
+          Ingresa con tu correo a nuestra plataforma y disfruta la experiencia
+        </h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="login-form">
+          <!-- Botón de inicio de sesión con Google -->
+          <button type="button" class="btn btn-google btn-block d-flex align-items-center justify-content-center p-3" id="googleLogin">
+            <i class="fab fa-google" aria-hidden="true" style="font-size: 1.5em; margin-right: 10px;"></i>
+            <span style="font-size: 1.1em; font-weight: bold;">Ingresa o Regístrate con Google</span>
+          </button>
+
+          <!-- Botón de inicio de sesión con Microsoft -->
+<button type="button" class="btn btn-microsoft btn-block d-flex align-items-center justify-content-center p-3 mt-2" id="microsoftLogin">
+  <i class="fab fa-microsoft" aria-hidden="true" style="font-size: 1.5em; margin-right: 10px;"></i>
+  <span style="font-size: 1.1em; font-weight: bold;">Ingresa o Regístrate con Microsoft</span>
+</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Estilos personalizados -->
+<style>
+  .btn-google {
+    background-color: #db4437;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-google:hover {
+    background-color: #c1351d;
+  }
+
+  .btn-microsoft {
+    background-color: #2F2F2F;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-microsoft:hover {
+    background-color: #1f1f1f;
+  }
+
+  .black-background {
+    background-color: black;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .modal-body {
+    background-color: #ffffff;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+    border: none;
+  }
+</style>
+
+
+      <!-- Carbon -->
+      <section class="carbon dark">
+        <div class="container-banner">
+            <div class="content">
+                <h2>SUAL</h2>
+                <p>Sistema Unificador de Acceso en Linea</p>
+                <div class="botones">
+                  <button class="custom-btn btn-3"><span>Ver más</span></button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+
+<!-- REGISTRO FIREBASE -->
+  <!--MAIN CONTENT-->
+  <div class="container p-5" style="z-index:1">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul class="list-group posts">
+                
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Acerca de</h6>
+          <br>
+          <p class="text-justify">
+            Sistema unificado de acceso en linea con gestor de contraseña 
+            integrado para facilitar el inicio de sesión y mejorar la seguridad
+            en múltiples plataformas educativas.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>SUAL</h6>
+          <br>
+          <ul class="footer-links">
+            <li><a href="./alumnos/mi-espacio.html">Alumnos</a></li>
+            <li><a href="./contacto/mi-espacio.html">Contacto </a></li>
+            <li><a href="./avisos/mantente-informado.html">Anuncios   </a></li>
+            
+          </ul> 
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <!-- <h6>SUAL</h6> -->
+          <br>
+          <ul class="footer-links">
+            <!-- <li><a href="#">SAE Institute México</a></li> -->
+            <!-- <li><a href="#">Instituto Artek</a></li> -->
+            <!-- <li><a href="#">Instituto Genus</a></li> -->
+          </ul>
+        </div> 
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; by 
+       <a href="#">SUAL</a>.
+          </p>
+        </div>
+
+        <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div> -->
+      </div>
+    </div>
+</footer>
+
+<!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <!--FIREBASE SCRIPTS-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+            
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+                   
+     <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+    apiKey: "AIzaSyBlYwH5xgfXm71YP0cvVu-kqZ2r-Mfs2O0",
+    authDomain: "tt-2-2996d.firebaseapp.com",
+    projectId: "tt-2-2996d",
+    storageBucket: "tt-2-2996d.firebasestorage.app",
+    messagingSenderId: "148332767233",
+    appId: "1:148332767233:web:0dfd3703e27da2ff88f800"
+        };
+                 
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        // FireStore base de datos
+        const fs = firebase.firestore();
+        firebase.analytics();
+     </script>
+                     <!--TERMINA FIREBASE-->
+      <!--Registro-->
+    <script type="module" src="./registro.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/utils.js"></script>
+  
+        <!-- PWA -->
+    <script src="./script.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="/js/perfilador.js"></script>
+</body>
+</html>

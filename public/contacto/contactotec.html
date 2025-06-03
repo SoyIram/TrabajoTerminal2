@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SUAL</title>
+  <!--PWA-->
+  <link rel="manifest" href="./manifest.json"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ravikumar Chauhan">
+
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+
+<!-- Meta and Opengraph tags -->
+  <meta name="description" content="Material Design Mediahawkz.com Fixed & Responsive Header with Sidebar, mediahawkz.com v2.1">
+  <meta name="keywords" content="material design, fixed header, responsive header, sidebar">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300'>
+
+<!--Carousell-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+</head>
+
+
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+  <div id="preloader"></div>
+<!-- partial:index.partial.html -->
+
+
+
+
+<!-- nav -->
+<nav class="sidebar">
+  <div class="nav-header">
+    <div class="logo-wrap">
+      <!-- <a class="logo-icon" href="#"><img alt="logo-icon" src="../img/docqui.png" width="40"></a> -->
+      <div id="contenido">
+      <a class="logo-text" href="#">SUAL</a>
+    </div>
+    </div>
+
+    <div class="nav-search">
+      <div class="search">
+        <i class="material-icons">search</i>
+        <input type="search" name="search" placeholder="Buscar" id="sidebarFinder">
+      </div>
+    </div>
+  </div>
+  <ul class="nav-categories ul-base">
+    <li><a href="../alumnos/iniciotec.html"><i class="fas fa-home"></i>&nbsp;Inicio</a></li>
+    <li><a href="../contacto/contactotec.html"><i class="fa fa-address-card"></i>&nbsp;Contacto</a></li>
+    <li><a href="../alumnos/tec.html"><i class="fas fa-graduation-cap"></i>&nbsp;Alumnos</a></li>
+    <li><a href="../avisos/avisostec.html">Noticias</a></li>
+  </ul>
+  <br>
+  <ul class="social ul-base">
+    <li><a href="https://www.instagram.com/" class="twitter" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://www.facebook.com/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://twitter.com/" class="google-plus" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://www.rssboard.org/rss-specification" class="rss" target="_blank"><i class="fa fa-rss"></i></a></li>
+  </ul>
+  <div class="copyright">
+    <span>&copy; 2025 <a href="../index.html" class="link">SUAL</a> Made in México</span>
+    <span>Designed by <a href="../index.html" target="_blank">SUAL</a></span>
+  </div>
+</nav><!-- @end nav -->
+
+<!-- header -->
+<header>
+  <div class="header-inner clearfix">
+    
+    <!--div class="registro">
+
+
+            <li style="display: none;" class="logged-out menu-item">
+                <a class=" registration" href="#" data-toggle="modal" data-target="#signinModal"><i class="fas fa-user"></i>&nbsp;Accede</a>
+            </li>
+            <li style="display: none;" class="menu-item logged-in"><a class="registration" href="./clinica/promociones/avisos.html"><i class="fas fa-bell"></i>&nbsp;Promociones</a></li>&nbsp;
+            <li style="display: none;" class="boton-salir logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+        </div-->
+
+    <div class="nav-btn nav-slider">
+      <i class="material-icons">menu</i>
+    </div>
+    <!-- <div class="header-logo">
+      <a href="#"><img alt="logo" src="./img/docqui.png"></a>
+    </div> -->
+    <!--div class="header-categories">
+      <ul class="ul-base">
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#"><span>Categories</span> <i class="material-icons">keyboard_arrow_down</i></a>
+          <ul class="dropdown-menu ul-base">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Speak up</a></li>
+            <li><a href="#">General</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Sports</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div-->
+    <div class="header-search">
+      <div class="search">
+        <i class="material-icons">search</i>
+        <input type="search" name="search" placeholder="Buscar">
+      </div>
+    </div>
+    <div class="header-menu">
+      <ul class="ul-base">
+        <li><a href="#" class="twitter" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" class="google-plus" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" class="rss" target="_blank"><i class="fa fa-rss"></i></a></li>
+        <!--li><a href="#">Login</a></li-->
+        
+      </ul>
+      
+    </div>
+  </div>
+</header><!-- @end header -->
+
+<!-- Main content -->
+<main role="main"></main><!-- @end main -->
+
+<!-- Footer -->
+<footer></footer><!-- @end footer -->
+
+
+<div class="overlay"></div>
+
+
+
+
+
+<section class="home d-flex align-items-center">
+  <!--div class="effect-wrap">
+    <i class="fas fa-plus effect effect-1"></i>
+    <i class="fas fa-plus effect effect-2"></i>
+    <i class="fas fa-circle-notch effect effect-3"></i>
+  </div-->
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <div class="home-text">
+          <h1>Alumnos</h1>
+          <p>
+          Bienvenido
+          </p>
+          <!--div class="home-btn01">
+            <a href="#" class="btn01 btn-1"><i class="fas fa-phone-alt"></i></a>
+            <button type="button" class="btn01 btn-1 video-play-btn">
+              <i class="fas fa-play"></i></button>
+          </div-->
+        </div>
+      </div>
+      
+    </div>
+
+     <!--SCROLL DOWN-->
+     <div class="container-scroll">
+      <section id="section10" class="demo">
+       
+        <a href="#contenido"><span></span></a>
+      </section>
+     </div>
+     <!--TERMINA SCROLLDOWN-->
+  </div>
+</section>
+
+
+
+
+<div class="viewport">
+  <!--div class="title">
+   <h1> Modern Cards Design.     </h1> 
+  </div-->
+<div class="cards">
+ 
+  <div class="card">
+    <a href="https://moodle.org/?lang=es">
+    <div class="card_img card1">
+         <div class="plus"><p>+</p></div>
+    </div>
+    <h3>Canvas</h3>
+    <div class="line">
+    </div>
+    <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.  </p>
+  </a>
+  </div>
+
+
+  <div class="card">
+    <a href="https://moodle.org/?lang=es">
+    <div class="card_img card2">
+      <div class="plus"><p>+</p></div>
+    </div>
+    <h3>Moodle</h3>
+    <div class="line">
+    </div>
+   <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+  </a>
+  </div>
+
+
+  <div class="card">
+    <a href="https://moodle.org/?lang=es">
+    <div class="card_img card3">
+      <div class="plus"><p>+</p></div>
+    </div>
+    <h3>Edublocks</h3>
+    <div class="line">
+    </div>
+    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+  </a>
+  </div>
+
+
+  <div class="card">
+    <a href="https://moodle.org/?lang=es">
+    <div class="card_img card4">
+      <div class="plus"><p>+</p></div>
+    </div>
+    <h3>Figma</h3>
+    <div class="line">
+    </div>
+    <p>voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </a>
+    </div>
+
+
+  <div class="card">
+    <a href="https://moodle.org/?lang=es">
+    <div class="card_img card5">
+      <div class="plus"><p>+</p></div>
+    </div>
+    <h3>Coursera</h3>
+    <div class="line">
+    </div>
+   <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
+  </a>
+  </div>
+
+  
+  <div class="card">
+    <a href="https://moodle.org/?lang=es">
+    <div class="card_img card6">
+      <div class="plus"><p>+</p></div>
+    </div>
+    <h3>TITLE HERE</h3>
+    <div class="line">
+    </div>
+    <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.  </p>
+  </div>
+</a>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+      <!--BOOTSTRAP SCRIPTS-->
+
+<!-- REGISTRO FIREBASE -->
+  <!--MAIN CONTENT-->
+  <div class="container p-5" style="z-index:1">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul class="list-group posts">
+                
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!--BOOTSTRAP SCRIPTS-->
+  
+      <!-- Modal  SignUP-->
+      <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Registro:
+              Contraseña con al menos 6 caracteres
+            </h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+           </div>
+           <div class="modal-body">
+            <form id="signup-form">
+              <div class="form-group">
+                 <input type="text" id="signup-email" class="form-control"
+                 placeholder="E-mail" required>
+              </div>
+              <div class="form-group">
+                 <input type="password" id="signup-password" class="form-control"
+                 placeholder="Contraseña" required>
+              </div>
+              <button type="submit" class="btn btn-primary">SignUp</button>
+            </form>
+           </div>
+         </div>
+        </div>
+      </div>
+                 
+                 
+                 
+                 <!-- Modal SignIn-->
+<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">
+          Ingresa con tu correo a nuestra plataforma y disfruta la experiencia
+        </h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="login-form">
+          <!-- Botón de inicio de sesión con Google -->
+          <button type="button" class="btn btn-google btn-block d-flex align-items-center justify-content-center p-3" id="googleLogin">
+            <i class="fab fa-google" aria-hidden="true" style="font-size: 1.5em; margin-right: 10px;"></i>
+            <span style="font-size: 1.1em; font-weight: bold;">Ingresa o Regístrate con Google</span>
+          </button>
+
+          <!-- Botón de inicio de sesión con Microsoft -->
+<button type="button" class="btn btn-microsoft btn-block d-flex align-items-center justify-content-center p-3 mt-2" id="microsoftLogin">
+  <i class="fab fa-microsoft" aria-hidden="true" style="font-size: 1.5em; margin-right: 10px;"></i>
+  <span style="font-size: 1.1em; font-weight: bold;">Ingresa o Regístrate con Microsoft</span>
+</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Estilos personalizados -->
+<style>
+  .btn-google {
+    background-color: #db4437;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-google:hover {
+    background-color: #c1351d;
+  }
+
+  .btn-microsoft {
+    background-color: #2F2F2F;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-microsoft:hover {
+    background-color: #1f1f1f;
+  }
+
+  .black-background {
+    background-color: black;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .modal-body {
+    background-color: #ffffff;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+    border: none;
+  }
+</style>
+
+
+      <!-- Carbon -->
+      <section class="carbon dark">
+        <div class="container-banner">
+            <div class="content">
+                <h2>SUAL</h2>
+                <p>Sistema Unificador de Acceso en Linea</p>
+                <div class="botones">
+                  <button class="custom-btn btn-3"><span>Ver más</span></button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+                        <!-- Carbon -->
+      <!-- <section class="carbon dark">
+        <div class="container-banner">
+        <div class="content">
+          <h2>Commiting To Carbon Negative</h2>
+          <p>Microsoft will be carbon negative by 2030 and by 2050 we will remove
+            all carbon the company has emitted since it was founded in 1975</p>
+            <a href="#" class="btn">
+              Learn More <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+      </div>
+      </section> -->
+
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>SUAL</h6>
+          <br>
+          <p class="text-justify">
+            Sistema unificado de acceso en línea con gestor de contraseña integrado para facilitar el inicio de sesión y mejorar la seguridad en múltiples plataformas educativas.
+          </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Enlaces</h6>
+          <br>
+          <ul class="footer-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../alumnos/mi-espacio.html">Alumnos</a></li>
+            <li><a href="../avisos/mantente-informado.html">Avisos</a></li>
+            <li><a href="../contacto/redes-sociales.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; by 
+       <a href="../index.html">SUAL</a>.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="rss" href="https://www.rssboard.org/rss-specification"><i class="fa fa-rss"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>                  
+
+
+
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+
+
+  </script>
+
+
+
+
+
+                <!--FIREBASE SCRIPTS-->
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+            
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+          <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+           <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+           <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+                   
+                     <script>
+                        // Your web app's Firebase configuration
+                        var firebaseConfig = {
+    apiKey: "AIzaSyBlYwH5xgfXm71YP0cvVu-kqZ2r-Mfs2O0",
+    authDomain: "tt-2-2996d.firebaseapp.com",
+    projectId: "tt-2-2996d",
+    storageBucket: "tt-2-2996d.firebasestorage.app",
+    messagingSenderId: "148332767233",
+    appId: "1:148332767233:web:0dfd3703e27da2ff88f800"
+       };
+                 
+                        // Initialize Firebase
+           firebase.initializeApp(firebaseConfig);
+           const auth = firebase.auth();
+           // FireStore base de datos
+           const fs = firebase.firestore();
+           firebase.analytics();
+                     </script>
+                     <!--TERMINA FIREBASE-->
+  
+
+
+      <!--Registro-->
+      <script src="./registro.js"></script>
+
+      <script src="./js/script.js"></script>
+  
+        <!-- PWA -->
+        <script src="./script.js"></script>
+        
+        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+            <script src="/js/perfilador.js"></script>
+  
+
+</body>
+</html>
+
