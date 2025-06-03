@@ -220,9 +220,9 @@ async function sendUserInformation(user) {
     let userType = 'Administrador'; // valor por defecto si no cumple ningún caso
     let redirectLink = '/';          // página por defecto
 // Definimos reglas claras según el dominio
-if (domain.endsWith('ipn.mx') && email.includes('alumno.')) {
+if (domain == 'alumno.ipn.mx') {
     userType = 'Alumno IPN';
-    redirectLink = '/public/ipn/alumnos/ipn.html';
+    redirectLink = '/public/alumnos/ipn.html';
 }
 else if (domain === 'ga.com.mx') {
     userType = 'Alumno UNAM';

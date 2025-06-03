@@ -11,7 +11,7 @@ firebase.auth().onAuthStateChanged(user => {
 
     const reglas = [
         {
-            dominio: 'ipn.mx',
+            dominio: 'alumno.ipn.mx',
             permitido: '/public/ipn/',
             redir: '/index.html'
         },
