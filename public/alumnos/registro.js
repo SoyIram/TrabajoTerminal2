@@ -123,9 +123,7 @@ const setupPosts = data => {
         html += li;
       });
       postList.innerHTML = html;
-    } else {
-      postList.innerHTML = '<p class="text-center"> Registrate en tu teléfono móvil para ver las últimas noticias. </p>';
-    }
+    } 
   }
 
 
