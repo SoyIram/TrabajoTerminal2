@@ -867,11 +867,11 @@ section{
 }
 .footer-links a
 {
-  color:#737373
+  color: #fff;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:var(--color-secundario);
+  color: var(--color-secundario);
   text-decoration:none;
 }
 .footer-links.inline li
@@ -1119,7 +1119,7 @@ button:hover, .custom-btn:hover {
 
 
 
-/*****  TWERMINAN CARDS  ******/
+/*****  TWERMINAN CARDS ******/
 
 
 /**** TITULO ****/
