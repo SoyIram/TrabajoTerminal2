@@ -5,7 +5,7 @@ urlsToCache = [
   './',
   './index.html',
   './?utm_source=web_app_manifest',
-  './styles.css',
+  './css/styles.css',
   './script.js',
   './img/icon-192x192.png',
   './img/icon-512x512.png'
