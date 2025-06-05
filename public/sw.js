@@ -4,6 +4,7 @@ const CACHE_NAME = 'v1_grupo_lehren',
 urlsToCache = [
   './',
   './index.html',
+  './?utm_source=web_app_manifest',
   './styles.css',
   './script.js',
   './img/icon-192x192.png',
