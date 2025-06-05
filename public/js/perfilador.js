@@ -12,18 +12,18 @@ firebase.auth().onAuthStateChanged(user => {
     const reglas = [
         {
             dominio: 'alumno.ipn.mx',
-            permitido: '/public/ipn/',
-            redir: '/index.html'
+            permitido: '/public/alumnos/',
+            redir: '/ipn.html'
         },
         {
             dominio: 'ga.com.mx',
-            permitido: '/public/unam/',
-            redir: '/index.html'
+            permitido: '/public/alumnos/',
+            redir: '/unam.html'
         },
         {
             dominio: 'gmail.com',
             permitido: '/public/alumnos/',
-            redir: '/index.html'
+            redir: '/mi-espacio.html'
         }
     ];
 
