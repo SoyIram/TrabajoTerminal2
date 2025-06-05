@@ -1,5 +1,8 @@
-const loggedOutLinks = document.querySelectorAll('.logged-out')
-const loggedInLinks = document.querySelectorAll('.logged-in')
+import {saveUser, isUserRegistered} from './js/users/utils/userOps.js';
+import {User} from './js/users/utils/User.js';
+
+const loggedOutLinks = document.querySelectorAll('.logged-out');
+const loggedInLinks = document.querySelectorAll('.logged-in');
 
 const loginCheck = user =>{
   if (user){
@@ -11,98 +14,106 @@ const loginCheck = user =>{
   }
 }
 
-// Sign Up Event
-const signupForm = document.querySelector('#signup-form');
-signupForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const email = document.querySelector('#signup-email').value;
-    const password = document.querySelector('#signup-password').value;
-
-    auth.
-        createUserWithEmailAndPassword(email, password)
-        .then(userCredential => {
-            //Clear the form
-            signupForm. reset();
-
-            //Close the modal
-            $('#signupModal').modal('hide')
-
-            console.log('sing up')
-            window.location='index.html';
-
-        })
-});
-
-// Sign In Event
 const signinForm = document.querySelector('#login-form');
 
-signinForm.addEventListener('submit', e => {
+signinForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+
     const email = document.querySelector('#login-email').value;
     const password = document.querySelector('#login-password').value;
-    auth.
-        signInWithEmailAndPassword(email, password)
-        .then(userCredential => {
-            //Clear the form
-            signupForm.reset();
 
-            //Close the modal
-            $('#signinModal').modal('hide')
-            //lo agregue yoppp
-            window.location='index.html';
-            console.log('sing in')
-        })
+    try {
+        const userCredential = await auth.signInWithEmailAndPassword(email, password);
+        const user = userCredential.user;
+
+        if (!user.emailVerified) {
+            alert('Por favor verifica tu correo electrónico antes de iniciar sesión.');
+            return;
+        }
+
+        await sendUserInformation(user);
+
+        signinForm.reset();
+        $('#signinModal').modal('hide');
+
+        setTimeout(() => {
+            window.location = 'index.html';
+        }, 2000);
+
+    } catch (error) {
+        console.error('Error al iniciar sesión:', error.message);
+        alert('Error: ' + error.message);
+    }
 });
 
 // Logout
-
 const logout = document.querySelector('#logout');
 
-logout.addEventListener('click', e => {
-    e.preventDefault();
-    auth.signOut().then(()=>{
-        console.log('sign out')
-    })
-})
+if (logout) {
+    logout.addEventListener('click', (e) => {
+        e.preventDefault();
+        auth.signOut().then(() => {
+            console.log('Sesión cerrada');
+        });
+    });
+}
 
 // Google login
-const googleButton = document.querySelector('#googleLogin')
-googleButton.addEventListener('click', e => {
-  const provider = new firebase.auth.GoogleAuthProvider();
-  auth.signInWithPopup(provider)
-  .then(result => {
-    console.log('google sign in')
-    // aqui van los modales para cerrar 
-     //Clear the form
-     signupForm.reset();
-     //Close the modal
-     $('#signinModal').modal('hide')
-     window.location='../index.html';
-  })
-  .catch(err => {
-    console.log(err)
-  })
-})
+const googleButton = document.querySelector('#googleLogin');
 
-//Facebook Login
-//const facebookButton = document.querySelector('#facebookLogin')
-//facebookButton.addEventListener('click', e =>{
-  //e.preventDefault();
-  //const provider = new firebase.auth.FacebookAuthProvider();
-  //auth.signInWithPopup(provider)
-  //.then(result => {
-    //console.log(result);
-    //console.log('facebook sign in')
-  //})
-  //.catch(err => {
-    //console.log(err)
-  //})
-//})
+googleButton.addEventListener('click', async (e) => {
+    e.preventDefault();
+    const provider = new firebase.auth.GoogleAuthProvider();
 
+    try {
+        const result = await auth.signInWithPopup(provider);
+        const user = result.user;
 
-// Posts
-// 22 de MARZO 2021 COMENTE LA li Es decir la lista para que no aparezcan los anuncios solo en la seccion de avisos
+        if (!user.emailVerified && !user.providerData.some(p => p.providerId === 'google.com')) {
+            alert('Por favor verifica tu correo antes de continuar.');
+            return;
+        }
+
+        await sendUserInformation(user);
+
+        // Cerrar modal
+        $('#signinModal').modal('hide');
+
+        setTimeout(() => {
+            window.location = 'index.html';
+        }, 2000);
+    } catch (err) {
+        console.error('Error en login con Google:', err.message);
+        alert('Error al iniciar sesión con Google: ' + err.message);
+    }
+});
+
+// Microsoft login
+const microsoftButton = document.querySelector('#microsoftLogin');
+
+microsoftButton?.addEventListener('click', async (e) => {
+    e.preventDefault();
+    const provider = new firebase.auth.OAuthProvider('microsoft.com');
+
+    try {
+        const result = await auth.signInWithPopup(provider);
+        const user = result.user;
+
+        // Microsoft no requiere emailVerified explícito
+        await sendUserInformation(user);
+
+        // Cerrar modal
+        $('#signinModal').modal('hide');
+
+        setTimeout(() => {
+            window.location = 'index.html';
+        }, 2000);
+    } catch (err) {
+        console.error('Error en login con Microsoft:', err.message);
+        alert('Error al iniciar sesión con Microsoft: ' + err.message);
+    }
+});
+
 const postList = document.querySelector('.posts');
 const setupPosts = data => {
     if (data.length) {
@@ -117,8 +128,8 @@ const setupPosts = data => {
         <br>
         <br>
         <h6><i class="far fa-clock"></i>&nbsp;${post.fecha}</h6>
-        </li>
-      <br-->
+        </li-->
+      <br>
       `;
         html += li;
       });
@@ -126,9 +137,8 @@ const setupPosts = data => {
     } 
   }
 
-
-//Eventos
-// listar los datos para los usuarios que estes autenticados
+// Eventos
+// listar los datos para los usuarios que estés autenticados
 
 auth.onAuthStateChanged(user => {
   if (user) {
@@ -144,13 +154,10 @@ auth.onAuthStateChanged(user => {
     }
 })
 
-
 // Onclick
 function noticias() {
-  document.location.href = "../index.html"
+  document.location.href = "./index.html"
 }
-
-
 
 ///// Nuevo script
 
@@ -159,21 +166,15 @@ function observador(){
     if (user){
     console.log('existe usuario activo')
     contenido.innerHTML = `
-    <div class="container mt-5">
-    <div class="alert alert-info" role="alert">
-    Confirma tu correo y refresca esta pagina
-  </div>
-  </div>
-  `;
+        <div class="container mt-5">
+            <div class="alert alert-info" role="alert">
+                Confirma tu correo y refresca esta pagina
+            </div>
+        </div>
+    `;
     aparece(user);
-    //
     var displayName = user.displayName;
     var email = user.email;
-
-
-   // console.log('*******');
-   // console.log(user.emailVerified)
-   // console.log('*******');
 
     var emailVerified = user.emailVerified;
     var photoURL = user.photoURL;
@@ -184,34 +185,66 @@ function observador(){
   } else {
     console.log('no existe usuario activo')
     contenido.innerHTML = `
-    <!--div class="container mt-5">
-    <div class="alert alert-warning" role="alert">
-  Registrate con tu email y una contraseña. La contraseña debera tener
-  un minimo de 6 caracteres
-</div>
-</div-->
-  `;
+        <!--div class="container mt-5">
+        <div class="alert alert-warning" role="alert">
+          Registrate con tu email y una contraseña. La contraseña debera tener
+          un minimo de 6 caracteres
+        </div>
+        </div-->
+    `;
   }
   });
 }
 observador();
 
-
 function aparece(user){
   var user = user;
   var contenido = document.getElementById('contenido');
   if(user.emailVerified){
-
-  contenido.innerHTML = `
- 
-  <div ">
-  <h4 class="alert-heading">${user.email}</h4>
-  <p>Gracias por registrarte.</p>
-
-  
-  </div-->
-  
-  `;
+    contenido.innerHTML = `
+      <div>
+          <br>
+          <p>Bienvenido.</p>
+          <h4 class="alert-heading">${user.email}</h4>
+      </div>
+    `;
+  }
 }
-  
+
+async function sendUserInformation(user) {
+    const email = user.email.toLowerCase();
+    const domain = email.split('@')[1];  // ejemplo: "alumno.ipn.mx" o "profesor.ipn.mx"
+
+    let userType = 'Administrador'; // valor por defecto si no cumple ningún caso
+    let redirectLink = '/';          // página por defecto
+// Definimos reglas claras según el dominio
+if (domain == 'alumno.ipn.mx') {
+    userType = 'Alumno IPN';
+    redirectLink = '/alumnos/ipn.html';
+}
+else if (domain === 'ga.com.mx') {
+    userType = 'Alumno UNAM';
+    redirectLink = '/alumnos/unam.html';
+}
+else if (domain === 'gmail.com') {
+    userType = 'Alumno General';
+    redirectLink = '/alumnos/mi-espacio.html';
+}
+
+
+
+
+    // Creamos usuario para Firebase
+    const userDB = new User(userType, email);
+
+    // Guardar usuario si no existe
+    const userExist = await isUserRegistered(email);
+    if (!userExist) {
+        await saveUser(userDB);
+    } else {
+        console.log('El usuario ya existe en Firebase');
+    }
+
+    // Redirigir al usuario según su tipo
+    window.location = redirectLink;
 }

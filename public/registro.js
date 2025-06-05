@@ -220,15 +220,15 @@ async function sendUserInformation(user) {
 // Definimos reglas claras según el dominio
 if (domain == 'alumno.ipn.mx') {
     userType = 'Alumno IPN';
-    redirectLink = '/public/alumnos/ipn.html';
+    redirectLink = '/alumnos/ipn.html';
 }
 else if (domain === 'ga.com.mx') {
     userType = 'Alumno UNAM';
-    redirectLink = '/public/alumnos/unam.html';
+    redirectLink = '/alumnos/unam.html';
 }
 else if (domain === 'gmail.com') {
     userType = 'Alumno General';
-    redirectLink = '/public/alumnos/mi-espacio.html';
+    redirectLink = '/alumnos/mi-espacio.html';
 }
 
 
