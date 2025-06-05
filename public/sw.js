@@ -1,13 +1,11 @@
 // Asignar un nombre y versión al caché
 const CACHE_NAME = 'v1_grupo_lehren';
 const urlsToCache = [
-  './',
-  './index.html',
-  './?utm_source=web_app_manifest',
-  './css/styles.css',
-  './script.js',
-  './img/icon-192x192.png',
-  './img/icon-512x512.png'
+  'index.html',
+  'css/styles.css',
+  'script.js',
+  'img/icon-192x192.png',
+  'img/icon-512x512.png'
 ];
 
 // Durante la instalación, se cachean los recursos estáticos del mismo origen
