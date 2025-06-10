@@ -558,6 +558,7 @@ position: relative;
     header .header-menu {
       display: none;
     }*/
+    
   }
   
   /* -----------------------------------------------------
@@ -882,17 +883,23 @@ animation: AnimationName 10s ease infinite;
   text-decoration: none;
 }
 
-.card{
-  width:22%;
-  position:relative;
-  background-color:white;
-  margin:1.13%;
-  border-radius:5px;
-  transition: 1s;
-  -webkit-transition:0.5s;
-  cursor:pointer;
-    flex: 1 1 auto;
+.card {
+  width: 22%;
+  position: relative;
+  background-color: white;
+  margin: 1.13%;
+  border-radius: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  cursor: pointer;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 370px; /* Nuevo */
+  overflow: hidden;
 }
+
 
 .card:hover{
   transform: scale(1.05);
@@ -920,17 +927,19 @@ animation: AnimationName 10s ease infinite;
   }
 }
 
-.card_img{
-  width:100%;
-  height:150px;
-  position:reltive;
+.card_img {
+  width: 100%;
+  height: 130px;
+  position: relative;
   border-radius: 5px 5px 0px 0px;
-  background-size: cover;
-  background-position:center center; 
+  background-size: contain;
+  background-position: center center; 
   background-color: #20e6b3;
-  transition:1s;
-  -webkit-transition:1s;
+  background-repeat: no-repeat;
+  transition: 1s;
+  -webkit-transition: 1s;
 }
+
 
 .card1{
    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1hgF8o_p837lJCT72u2MsemJuavOJQWsXGw&usqp=CAU);

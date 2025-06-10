@@ -102,139 +102,16 @@
   </div>
 </section>
 
-
-<!-- <section>
-  <div class="video-popup">
-    <div class="video-popup-inner">
-      <i class="fas fa-times video-popup-close"></i>
-      <div class="iframe-box">
-        <iframe id="player-1" src="https://www.youtube.com/embed/d8WWWyJKWHs?si=TxMYKl4A_P26IfCP&amp;start=1"
-        allow="accelerometer; autoplay; clipboard-write;  picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-
-
-
-<!-- <section class="my-accordeon"> -->
-
-  <!-- <div class="container"> -->
-
-
-   <!-- <div class="panel"> --> <!-- PANEL 1 -->
-
-    <!-- <div class="panel-head">
-
-      <div class="panel-head-left">
-       <div class="panel-head-left-icon">
-        <img src="https://www.cogedim-club.fr/wp-content/uploads/2019/01/picto_conciergerie.png" alt="">
-       </div>
-       <p class="panel-head-left-title">Arte</p>
-      </div>
-
-      <div class="panel-head-right">
-       <p class="panel-head-right-details">Plus de détails</p>
-       <div class="panel-head-right-cross">
-        <span></span>
-        <span></span>
-       </div>
-      </div>
-
-    </div>
-
-    <div class="toggle">
-     <div class="toggle-content">
-      <div class="toggle-desc">
-       <p>L’équipe de la résidence de l’Esprit des Quais, ainsi que la directrice de la résidence pour seniors, seront&nbsp; à votre écoute 7jours/7 et 24h/24. Toute l’équipe pourra vous apporter son aide pour vos différentes démarches administratives, vous
-        aider au quotidien ou encore pour réaliser des petits bricolages dans votre logement.</p>
-      </div>
-      <img class="toggle-img" src="https://www.cogedim-club.fr/wp-content/uploads/2019/01/Bordeaux-5-600x425.jpg" alt="">
-     </div>
-    </div>
-
-   </div> -->
-
-
-   <!-- <div class="panel"> --> <!-- PANEL 2 -->
-
-    <!-- <div class="panel-head">
-
-      <div class="panel-head-left">
-       <div class="panel-head-left-icon">
-        <img src="https://www.cogedim-club.fr/wp-content/uploads/2019/01/picto_conciergerie_1.png" alt="">
-       </div>
-       <p class="panel-head-left-title">Básicas</p>
-      </div>
-
-      <div class="panel-head-right">
-       <p class="panel-head-right-details">Plus de détails</p>
-       <div class="panel-head-right-cross">
-        <span></span>
-        <span></span>
-       </div>
-      </div>
-
-    </div>
-
-    <div class="toggle">
-     <div class="toggle-content">
-      <div class="toggle-desc">
-       <p>Vous avez besoin d’une aide ou de conseils pour réserver vos billets de train, d’avion ou encore un taxi pour vous déplacer, aller à un rendez-vous médical ? Il est possible de vous adresser à notre équipe pour toute réservation et autre demande
-        de ce type.</p>
-      </div>
-      <img class="toggle-img" src="https://www.cogedim-club.fr/wp-content/uploads/2019/01/5.-Reception-483372353-600x400.jpg" alt="">
-     </div>
-    </div>
-
-   </div> -->
-
-
-    <!-- <div class="panel"> -->  <!-- PANEL 3 -->
-
-     <!-- <div class="panel-head">
-
-      <div class="panel-head-left">
-       <div class="panel-head-left-icon">
-        <img src="https://www.cogedim-club.fr/wp-content/uploads/2019/01/picto_salon.png" alt="">
-       </div>
-       <p class="panel-head-left-title">Mátematicas</p>
-      </div>
-
-      <div class="panel-head-right">
-       <p class="panel-head-right-details">Plus de détails</p>
-       <div class="panel-head-right-cross">
-        <span></span>
-        <span></span>
-       </div>
-      </div>
-
-    </div>
-
-    <div class="toggle">
-     <div class="toggle-content">
-      <div class="toggle-desc">
-       <p>Parmi la gamme de services proposés par la résidence, vous allez pouvoir profiter d’espaces communs chaleureux et conviviaux. Un restaurant, la bibliothèque commune pour un moment de détente ou encore des activités bien-être tous les jours.</p>
-      </div>
-      <img class="toggle-img" src="https://www.cogedim-club.fr/wp-content/uploads/2019/01/2017-07-cCC-Bordeaux-restaurant-600x425.jpg" alt="">
-     </div>
-    </div>
-
-   </div> -->
-
-
-  <!-- </div> --> <!-- end .container -->
-<!-- </section> --> <!-- end section -->
-
-
 <div class="viewport">
   <!--div class="title">
    <h1> Modern Cards Design.     </h1> 
   </div-->
-<div class="cards">
-  <div class="card">
+  <!-- Buscador -->
+<div class="container my-4">
+  <input type="text" id="institution-search" class="form-control" placeholder="Escribe el nombre de tu institución (ej. UNAM, IPN, UPN)">
+</div>
+<div id="platform-cards" class="cards">
+  <div class="card" data-platform="Google Meet">
     <a href="https://meet.google.com/">
       <div class="card_img" style="background-image: url('../img/meet.png'); background-size: cover;"></div>
       <h3>Google Meet</h3>
@@ -242,7 +119,8 @@
       <p>Servicio de videollamadas de Google que permite realizar reuniones virtuales de forma sencilla y segura.</p>
     </a>
   </div>
-  <div class="card">
+
+  <div class="card" data-platform="Classroom">
     <a href="https://classroom.google.com/">
       <div class="card_img" style="background-image: url('../img/classroom.png'); background-size: cover;"></div>
       <h3>Classroom</h3>
@@ -250,7 +128,8 @@
       <p>Plataforma gratuita de aprendizaje de Google para instituciones educativas, facilita la creación, distribución y calificación de tareas.</p>
     </a>
   </div>
-  <div class="card">
+
+  <div class="card" data-platform="Microsoft Teams">
     <a href="https://teams.microsoft.com/">
       <div class="card_img" style="background-image: url('../img/teams.png'); background-size: cover;"></div>
       <h3>Microsoft Teams</h3>
@@ -258,11 +137,48 @@
       <p>Aplicación de colaboración de Microsoft 365: chat, videollamadas, almacenamiento e integración de documentos.</p>
     </a>
   </div>
+
+  <div class="card" data-platform="Moodle">
+    <a href="https://moodle.org/">
+      <div class="card_img" style="background-image: url('../img/moodle.png'); background-size: cover;"></div>
+      <h3>Moodle</h3>
+      <div class="line"></div>
+      <p>Plataforma de aprendizaje muy utilizada en la UNAM, IPN y UPN. Permite gestionar cursos, tareas, foros y calificaciones.</p>
+    </a>
+  </div>
+
+  <div class="card" data-platform="Matlab">
+    <a href="https://matlab.mathworks.com/">
+      <div class="card_img" style="background-image: url('../img/matlab.png'); background-size: cover;"></div>
+      <h3>Matlab</h3>
+      <div class="line"></div>
+      <p>Lenguaje y entorno de programación usado para matemáticas, simulación e ingeniería en carreras científicas.</p>
+    </a>
+  </div>
+
+  <div class="card" data-platform="Zoom">
+    <a href="https://zoom.us/">
+      <div class="card_img" style="background-image: url('../img/zoom.png'); background-size: cover;"></div>
+      <h3>Zoom</h3>
+      <div class="line"></div>
+      <p>Plataforma de videoconferencias utilizada por muchas universidades para clases en línea, asesorías y reuniones.</p>
+    </a>
+  </div>
+
+  <div class="card card-small" data-platform="Canvas">
+    <a href="https://canvas.instructure.com/">
+      <div class="card_img" style="background-image: url('../img/canvas.png'); background-size: contain;"></div>
+      <h3>Canvas</h3>
+      <div class="line"></div>
+      <p>Plataforma educativa moderna para gestionar cursos, tareas y comunicación académica en línea.</p>
+    </a>
+  </div>
 </div>
 
-
-
-
+<!-- Mensaje si no hay resultados -->
+<div id="no-results" class="text-center my-4" style="display:none;">
+  <p class="text-muted">No se encontraron plataformas para la institución especificada.</p>
+</div>
 
 
 
@@ -328,17 +244,7 @@
                        <div class="modal-body">
                           
                         <form id="login-form">
-                           
-                          <!--div class="form-group">
-                             <input type="text" id="login-email" class="form-control"
-                             placeholder="E-mail" required>
-                          </div>
-                          <div class="form-group">
-                             <input type="password" id="login-password" class="form-control"
-                             placeholder="Contraseña" required>
-                          </div>
                           
-                          <button type="submit" class="btn btn-info btn-block">Ingresa</button-->
                           
                           <button type="button" class="btn btn-success btn-block black-background white" id="googleLogin"><i class="fab fa-google" aria-hidden="true"></i>&nbsp;Ingresa o Regístrate con Gmail</button>
                           <!--button type="submit" class="btn btn-primary btn-block" id="facebookLogin"><i class="fab fa-facebook"></i>&nbsp;Ingresa o Regístrate con Facebook</button-->
@@ -347,24 +253,6 @@
                      </div>
                     </div>
                   </div>
-
-
-
-
-
-                        <!-- Carbon -->
-      <!-- Seccion de la imagen de unas montanias y descripcion del carbon negativo -->                   
-      <!-- <section class="carbon dark">
-        <div class="container-banner">
-        <div class="content">
-          <h2>Commiting To Carbon Negative</h2>
-          <p>Microsoft will be carbon negative by 2030 and by 2050 we will remove
-            all carbon the company has emitted since it was founded in 1975</p>
-            <a href="#" class="btn">
-              Learn More <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
-      </section> -->
 
 
   <!-- Site footer -->
@@ -408,9 +296,6 @@
       </div>
     </div>
 </footer>                  
-
-
-
 
 
 <!-- partial -->
@@ -468,8 +353,68 @@
         
         <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
-  
+ <!-- Scripts -->
+<script>
+  const institucionPlataformas = {
+    "IPN": ["Microsoft Teams", "Matlab", "Classroom", "Moodle"],
+    "UNAM": ["Microsoft Teams", "Zoom", "Moodle"],
+    "TEC": ["Microsoft Teams", "Classroom"],
+    "UPN": ["Moodle", "Canvas"]
+  };
+
+  const searchInput = document.getElementById('institution-search');
+  const cards = document.querySelectorAll('#platform-cards .card');
+  const noResultsDiv = document.getElementById('no-results');
+
+  // Función para mostrar todas las tarjetas
+  function mostrarTodasLasTarjetas() {
+    cards.forEach(card => card.style.display = "block");
+    if (noResultsDiv) noResultsDiv.style.display = "none";
+  }
+
+  // Función para ocultar todas las tarjetas
+  function ocultarTodasLasTarjetas() {
+    cards.forEach(card => card.style.display = "none");
+    if (noResultsDiv) noResultsDiv.style.display = "block";
+  }
+
+  // Función principal para filtrar
+  function filtrarPorInstitucion(query) {
+    if (query === "") {
+      mostrarTodasLasTarjetas();
+      return;
+    }
+
+    const key = query.toUpperCase();
+    const plataformasFiltradas = institucionPlataformas[key];
+
+    if (plataformasFiltradas) {
+      let algunaVisible = false;
+      cards.forEach(card => {
+        const plataforma = card.getAttribute('data-platform');
+        if (plataformasFiltradas.includes(plataforma)) {
+          card.style.display = "block";
+          algunaVisible = true;
+        } else {
+          card.style.display = "none";
+        }
+      });
+      if (noResultsDiv) noResultsDiv.style.display = algunaVisible ? "none" : "block";
+    } else {
+      ocultarTodasLasTarjetas();
+    }
+  }
+
+  // Debounce para evitar llamadas innecesarias al escribir
+  let debounceTimer;
+  searchInput?.addEventListener('input', () => {
+    const query = searchInput.value.trim();
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      filtrarPorInstitucion(query);
+    }, 300); // Espera 300ms tras dejar de escribir
+  });
+</script> 
 
 </body>
 </html>
-
