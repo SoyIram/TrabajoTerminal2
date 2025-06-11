@@ -271,7 +271,7 @@ header .header-search .search-list-item .flex {
     line-height: 64px;
   }
   header .header-menu ul li a {
-    color: var(--color-principal); /* Ajustar color de los enlaces del menú */
+    color: #000000; /* Ajustar color de los enlaces del menú */
     font-size: 17px;
     padding: 4px;
   }

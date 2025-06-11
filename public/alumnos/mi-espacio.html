@@ -27,14 +27,9 @@
 <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
 </head>
 
-
 <body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
   <div id="preloader"></div>
 <!-- partial:index.partial.html -->
-
-
-
-
 <!-- nav -->
 <nav class="sidebar">
   <div class="nav-header">
@@ -58,17 +53,30 @@
 <!-- header -->
 <header>
   <div class="header-inner clearfix">
+
     <div class="nav-btn nav-slider">
       <i class="material-icons">menu</i>
     </div>
+
+    <div class="header-search">
+
+        <div>
+            <ul id="listOptions"></ul>
+        </div>
+    </div>
     <div class="header-menu">
       <ul class="ul-base">
-        <li style="display: none;" class="logged-out menu-item">
-          <a class="registration" href="#" data-toggle="modal" data-target="#signinModal"><i class="fas fa-user"></i>&nbsp;Ingresa | Regístrate</a>
-        </li>
-        <li style="display: none;" class="menu-item logged-in"><a class="registration" href="../avisos/mantente-informado.html"><i class="fas fa-bell"></i>&nbsp;Avisos</a></li>&nbsp;
-        <li style="display: none;" class="boton-salir logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+      
+          <li style="display: none;" class="logged-out menu-item">
+              <a class="registration" href="#" data-toggle="modal" data-target="#signinModal"><i class="fas fa-user"></i>&nbsp;Ingresa | Regístrate</a>
+          </li>
+          <!--li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fas fa-clipboard"></i>&nbsp;Registrate</a></li-->
+              <li style="display: none;" class="menu-item logged-in"><a class="registration" href="./avisos/mantente-informado.html"><i class="fas fa-bell"></i>&nbsp;Anuncios</a></li>&nbsp;
+              <li style="display: none;" class="boton-salir logged-in"><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+
+        
       </ul>
+      
     </div>
   </div>
 </header><!-- @end header -->
@@ -77,11 +85,6 @@
 <main role="main"></main><!-- @end main -->
 
 <div class="overlay"></div>
-
-
-
-
-
 <section class="home d-flex align-items-center">
   <div class="container">
     <div class="row align-items-center">
@@ -165,7 +168,6 @@
       <p>Plataforma de videoconferencias utilizada por muchas universidades para clases en línea, asesorías y reuniones.</p>
     </a>
   </div>
-
   <div class="card card-small" data-platform="Canvas">
     <a href="https://canvas.instructure.com/">
       <div class="card_img" style="background-image: url('../img/canvas.png'); background-size: contain;"></div>
@@ -174,7 +176,6 @@
       <p>Plataforma educativa moderna para gestionar cursos, tareas y comunicación académica en línea.</p>
     </a>
   </div>
-
   <div class="card" data-platform="Classroom">
     <a href="https://classroom.google.com/">
       <div class="card_img" style="background-image: url('../img/classroom.png'); background-size: cover;"></div>
@@ -194,16 +195,11 @@
     </a>
   </div>
 </div>
-
 <!-- Mensaje si no hay resultados -->
 <div id="no-results" class="text-center my-4" style="display:none;">
   <p class="text-muted">No se encontraron plataformas para la institución especificada.</p>
 </div>
-
-
-
       <!--BOOTSTRAP SCRIPTS-->
-
 <!-- REGISTRO FIREBASE -->
   <!--MAIN CONTENT-->
   <div class="container p-5" style="z-index:1">
@@ -215,7 +211,6 @@
       </div>
     </div>
   </div>
-  
   <!--BOOTSTRAP SCRIPTS-->
   
       <!-- Modal  SignUP-->
@@ -246,10 +241,7 @@
          </div>
         </div>
       </div>
-                 
-                 
-                 
-                  <!-- Modal  SignIn-->
+                 <!-- Modal  SignIn-->
                   <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                      <div class="modal-content">
@@ -264,8 +256,6 @@
                        <div class="modal-body">
                           
                         <form id="login-form">
-                          
-                          
                           <button type="button" class="btn btn-success btn-block black-background white" id="googleLogin"><i class="fab fa-google" aria-hidden="true"></i>&nbsp;Ingresa o Regístrate con Gmail</button>
                           <!--button type="submit" class="btn btn-primary btn-block" id="facebookLogin"><i class="fab fa-facebook"></i>&nbsp;Ingresa o Regístrate con Facebook</button-->
                         </form>
@@ -273,8 +263,6 @@
                      </div>
                     </div>
                   </div>
-
-
   <!-- Site footer -->
   <footer class="site-footer">
     <div class="container">
@@ -316,23 +304,12 @@
       </div>
     </div>
 </footer>                  
-
-
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
-
-
   </script>
-
-
-
-
-
                 <!--FIREBASE SCRIPTS-->
      <!-- The core Firebase JS SDK is always required and must be listed first -->
-     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
-
-            
+     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>            
      <!-- TODO: Add SDKs for Firebase products that you want to use
           https://firebase.google.com/docs/web/setup#available-libraries -->
           <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
@@ -358,9 +335,6 @@
            firebase.analytics();
                      </script>
                      <!--TERMINA FIREBASE-->
-  
-
-
         <!--Registro-->
         <script src="./registro.js"></script>
 
@@ -381,11 +355,9 @@
     "TEC": ["Microsoft Teams", "Classroom", "Canvas"], // Canvas agregado a TEC
     "UPN": ["Moodle", "Canvas", "Microsoft Teams"] // Teams agregado a UPN
   };
-
   const searchInput = document.getElementById('institution-search');
   const cards = document.querySelectorAll('#platform-cards .card');
   const noResultsDiv = document.getElementById('no-results');
-
   // Función para mostrar todas las tarjetas
   function mostrarTodasLasTarjetas() {
     cards.forEach(card => card.style.display = "block");
@@ -397,14 +369,12 @@
     cards.forEach(card => card.style.display = "none");
     if (noResultsDiv) noResultsDiv.style.display = "block";
   }
-
   // Función principal para filtrar
   function filtrarPorInstitucion(query) {
     if (query === "") {
       mostrarTodasLasTarjetas();
       return;
     }
-
     const key = query.toUpperCase();
     const plataformasFiltradas = institucionPlataformas[key];
 
@@ -424,7 +394,6 @@
       ocultarTodasLasTarjetas();
     }
   }
-
   // Debounce para evitar llamadas innecesarias al escribir
   let debounceTimer;
   searchInput?.addEventListener('input', () => {
@@ -435,6 +404,5 @@
     }, 300); // Espera 300ms tras dejar de escribir
   });
 </script> 
-
 </body>
 </html>
