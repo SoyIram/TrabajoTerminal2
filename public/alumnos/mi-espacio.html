@@ -120,12 +120,13 @@
     </a>
   </div>
 
-  <div class="card" data-platform="Classroom">
-    <a href="https://classroom.google.com/">
-      <div class="card_img" style="background-image: url('../img/classroom.png'); background-size: cover;"></div>
-      <h3>Classroom</h3>
+  <!-- Tarjeta especial para SAES ESCOM (con nueva imagen) -->
+  <div class="card" data-platform="SAES ESCOM">
+    <a href="https://www.saes.escom.ipn.mx/">
+      <div class="card_img" style="background-image: url('../img/logoipn.png'); background-size: cover;"></div>
+      <h3>SAES ESCOM</h3>
       <div class="line"></div>
-      <p>Plataforma gratuita de aprendizaje de Google para instituciones educativas, facilita la creación, distribución y calificación de tareas.</p>
+      <p>Portal de la ESCOM para consultar calificaciones, horarios y realizar trámites escolares.</p>
     </a>
   </div>
 
@@ -171,6 +172,25 @@
       <h3>Canvas</h3>
       <div class="line"></div>
       <p>Plataforma educativa moderna para gestionar cursos, tareas y comunicación académica en línea.</p>
+    </a>
+  </div>
+
+  <div class="card" data-platform="Classroom">
+    <a href="https://classroom.google.com/">
+      <div class="card_img" style="background-image: url('../img/classroom.png'); background-size: cover;"></div>
+      <h3>Classroom</h3>
+      <div class="line"></div>
+      <p>Plataforma gratuita de aprendizaje de Google para instituciones educativas, facilita la creación, distribución y calificación de tareas.</p>
+    </a>
+  </div>
+
+  <!-- Tarjeta especial para Google Docs (solo para UNAM) -->
+  <div class="card" data-platform="Google Docs">
+    <a href="https://docs.google.com/">
+      <div class="card_img" style="background-image: url('../img/google-docs-unam.png'); background-size: cover;"></div>
+      <h3>Google Docs</h3>
+      <div class="line"></div>
+      <p>Herramienta de Google para crear, editar y compartir documentos en línea, ideal para trabajos colaborativos en la UNAM.</p>
     </a>
   </div>
 </div>
@@ -356,10 +376,10 @@
  <!-- Scripts -->
 <script>
   const institucionPlataformas = {
-    "IPN": ["Microsoft Teams", "Matlab", "Classroom", "Moodle"],
-    "UNAM": ["Microsoft Teams", "Zoom", "Moodle"],
-    "TEC": ["Microsoft Teams", "Classroom"],
-    "UPN": ["Moodle", "Canvas"]
+    "IPN": ["Microsoft Teams", "Matlab", "SAES ESCOM"],
+    "UNAM": ["Google Docs", "Zoom", "Moodle"],
+    "TEC": ["Microsoft Teams", "Classroom", "Canvas"], // Canvas agregado a TEC
+    "UPN": ["Moodle", "Canvas", "Microsoft Teams"] // Teams agregado a UPN
   };
 
   const searchInput = document.getElementById('institution-search');
