@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (domain === 'alumno.ipn.mx') {
       userType = 'Alumno IPN';
-      redirectLink = '/alumnos/ipn.html';
+      redirectLink = '/ipn.html';
     } else if (domain === 'ga.com.mx') {
       userType = 'Alumno UNAM';
       redirectLink = '/unam.html';
