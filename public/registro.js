@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
       redirectLink = '/public/alumnos/unam.html';
     } else if (domain === 'gmail.com') {
       userType = 'Alumno General';
-      redirectLink = 'alumnos/mi-espacio.html';
+      redirectLink = '/alumnos/mi-espacio.html';
     }
 
     const userDB = new User(userType, email);
