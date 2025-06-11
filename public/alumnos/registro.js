@@ -176,10 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
       redirectLink = '/alumnos/ipn.html';
     } else if (domain === 'ga.com.mx') {
       userType = 'Alumno UNAM';
-      redirectLink = '/public/alumnos/unam.html';
+      redirectLink = '/alumnos/unam.html';
     } else if (domain === 'gmail.com') {
       userType = 'Alumno General';
-      redirectLink = 'alumnos/mi-espacio.html';
+      redirectLink = '/alumnos/mi-espacio.html';
     }
 
     const userDB = new User(userType, email);
